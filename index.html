@@ -21,7 +21,8 @@
         <section class="main-section">
             <div class="header">
                 <img class="alura" src="assets/img/alura.png" alt="Alura">
-                <textarea name="" id="" cols="10" rows="10" placeholder="Digite seu texto"></textarea>
+
+                <textarea type="text" name="" id="textarea" cols="10" rows="10" placeholder="Digite seu texto"></textarea>
             </div>
             <div class="middle-section">
                 <div class="middle-section__exclamation">
@@ -29,8 +30,8 @@
                     <span>Apenas letras minúsculas e sem acento.</span>
                 </div>
                 <div class="buttons">
-                    <button>Criptografar</button>
-                    <button>Descriptografar</button>
+                    <button onclick="btnCriptografar()" id="btn-criptografar">Criptografar</button>
+                    <button onclick="btnDscriptografar()">Descriptografar</button>
                 </div>
             </div>
         </section>
@@ -38,25 +39,27 @@
 
             <div class="msg">
 
-                <div class="no-msg ">
+                <div class="no-msg " id="no-msg">
                     <img class="image" src="assets/img/looking.png"
                         alt="desenho de uma pessoa inspecionando um diamante com uma lupa na mão">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
 
-                <div class="msg-descriptografada none">
+                <div class="msg-descriptografada none" id="msg-descriptografada">
                     <p id="mensagem" class="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum
                         iste ex velit, perferendis voluptas harum excepturi molestias, fugit nostrum temporibus officiis
                         nam porro aperiam expedita! Ex rerum debitis sapiente?
                     </p>
 
-                    <button class="btn-copy ">Copiar</button>
+                    <button class="btn-copy " onclick="copiar()">Copiar</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 
