@@ -85,15 +85,5 @@ function btnDscriptografar() {
 }
 
 function copiar() {  
-    let selecionadorDeTexto = document.createElement('textarea');
-
-    selecionadorDeTexto.value = mensagem.textContent;
-
-    document.body.appendChild(selecionadorDeTexto);
-
-    selecionadorDeTexto.select();
-
-    document.execCommand('copy');
-
-    document.body.removeChild(selecionadorDeTexto);
+    navigator.clipboard.writeText(mensagem.textContent)
 }
