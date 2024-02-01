@@ -85,21 +85,15 @@ function btnDscriptografar() {
 }
 
 function copiar() {  
-    // Cria um elemento de seleção de texto temporário
     let selecionadorDeTexto = document.createElement('textarea');
 
-    // Define o valor do texto no elemento de seleção de texto para o conteúdo da mensagem
     selecionadorDeTexto.value = mensagem.textContent;
 
-    // Adiciona o elemento de seleção de texto ao corpo do documento
     document.body.appendChild(selecionadorDeTexto);
 
-    // Seleciona o texto dentro do elemento
     selecionadorDeTexto.select();
 
-    // Executa o comando de cópia para copiar o texto para a área de transferência
     document.execCommand('copy');
 
-    // Remove o elemento de seleção de texto temporário
     document.body.removeChild(selecionadorDeTexto);
 }
