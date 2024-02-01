@@ -1,0 +1,54 @@
+@media screen and (min-width:768px){
+    .main-section .header textarea {
+        height: 450px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-section .middle-section button, .botton-section .msg .btn-copy {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1440px){
+    main {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section {
+        width: 680px;
+    }
+
+    .botton-section {
+        margin: 0;
+    }
+
+    .botton-section .msg {
+        display: flex;
+        justify-content: center;
+        height: 910px;
+        width: 400px;
+    }
+
+    .main-section .header textarea {
+        height: 680px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .msg .no-msg .image {
+        width: 100%;
+        display: block;
+    }
+
+}

@@ -1,0 +1,118 @@
+.main-section .header {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    gap: 50px;
+}
+
+.main-section .header img {
+    width: 32px;
+}
+
+.main-section .header textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem; /* 32px */
+    color: var(--color-primary);
+
+    height: 243px;
+    resize: none
+}
+
+.main-section textarea::placeholder {
+    color: var(--color-primary);
+}
+
+.main-section .fa-solid {
+    color: var(--color-gray-500);
+}
+
+.main-section span {
+    font-size: 0.75rem; /* 12px */
+    color: var(--color-gray-500);
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.middle-section .middle-section__exclamation {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-section .middle-section button, .botton-section .msg .btn-copy {
+    border: none;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.main-section button:nth-child(1){
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.main-section button:nth-child(2), .botton-section .msg .btn-copy{
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    background-color: var(--background-color);
+}
+
+.main-section button:hover, .botton-section .msg .btn-copy:hover {
+    background-color: var(--color-dark-blue-500);
+    color:  #fff;
+    cursor: pointer;
+}
+
+.botton-section {
+    margin-top: 56px;
+    padding: 0 16px;
+}
+
+.msg {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    box-shadow: 2px 4px 14px 2px #0000003b;
+}
+
+.msg .no-msg .image {
+    display: none;
+}
+
+.msg .no-msg h2 {
+    color: #343A40;
+}
+
+.msg p {
+    color: #495057;
+}
+
+.msg #mensagem {
+    font-size: 24px;
+}
+
+.none {
+    display: none;
+}
+
+.botton-section .msg .btn-copy{
+    background-color: #fff;
+    width: 100%;
+}
+
+.botton-section .msg .msg-descriptografada .btn-copy{
+    margin-top: 16px;
+}
